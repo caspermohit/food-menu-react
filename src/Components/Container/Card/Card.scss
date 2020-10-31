@@ -1,0 +1,46 @@
+.card-container{
+    background-color: rgba(100, 155, 68, 0.9);
+    width: 100%;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-areas: "top-card" "bottom-card";
+    grid-template-rows: 60% 40%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    height: 7.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        box-shadow: 0 0 .5rem .2rem rgb(46, 124, 56);
+        .top-card{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.top-card{
+    grid-area: top-card;
+    margin: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.bottom-card{
+    grid-area: bottom-card;
+    margin: 1rem;
+}
+
+.card-img{
+    height: 4rem;
+}
+
+.card-list{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: left;
+}
